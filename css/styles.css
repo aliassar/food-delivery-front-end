@@ -1,0 +1,284 @@
+body {
+    direction: rtl;
+    font-family: Vazir, sans-serif;
+    font-size: 0.9rem;
+    text-align: right;
+}
+
+button {
+    font-size: inherit;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+.header {
+    z-index: 10;
+    padding: 16px 50px;
+    height: 50px;
+}
+
+.background {
+    background-color: #f7fff7;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.badge-info {
+    color: #fff;
+    background-color: #4ecdc4;
+    padding: 5px 7px 3px 4px
+}
+
+.font {
+    font-family: Vazir, sans-serif;
+}
+
+.badge-notification {
+    position: relative;
+    right: -55px;
+    top: -10px;
+}
+
+.icon-with-badge {
+    margin-left: -25px;
+}
+
+.margin-left {
+    margin-left: 16px;
+}
+
+.margin-top {
+    margin-top: 16px !important;
+}
+
+.margin-bottom {
+    margin-bottom: 16px;
+}
+
+.margin-right {
+    margin-right: 8px;
+}
+
+.red {
+    background-color: #ff6b6b;
+}
+
+.height-20 {
+    height: 30vh;
+}
+
+.restaurant-icon {
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    border: #ffffff solid 5px;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.24);
+}
+
+.gap-top {
+    margin-top: 72px;
+}
+
+.gap-bottom {
+    margin-bottom: 72px;
+}
+
+.no-vertical-padding {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.food {
+    width: 190px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.card {
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.24);
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.24);
+}
+
+.food-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 0.3rem;
+}
+
+.star-icon {
+    width: 10px;
+    height: 10px;
+    margin-top: 2px;
+    margin-left: 3px;
+}
+.star-icon-lg {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    margin-left: 3px;
+}
+
+.btn-gold {
+    background-color: #ffe66d;
+}
+
+.line {
+    width: 180px;
+    height: 2px;
+    background-color: #1a535c;
+    margin-bottom: 30px !important;
+}
+
+.green-color {
+    color: #1a535c;
+}
+
+.btn-disabled {
+    background-color: #eeeeef;
+}
+
+.left-border {
+    border-left: thick dashed #eeeeef;
+}
+
+.line-2 {
+    width: 90px;
+    height: 1px;
+    background-color: #eeeeef;
+    margin-bottom: 30px !important;
+}
+.line-3 {
+    width: 180px;
+    height: 1px;
+    background-color: #eeeeef;
+    margin-bottom: 30px !important;
+}
+
+.border-dashed {
+    border: 2px dashed #eeeeef !important;
+    border-radius: 1rem;
+}
+
+.bg-cyan {
+    background-color: #4ecdc4;
+}
+
+.red-color {
+    color: #ff6b6b;
+}
+
+.icon {
+    width: 20px;
+}
+
+.big-font {
+    font-size: 1.4rem;
+}
+
+.white-color {
+    color: #ffffff;
+}
+
+.padding-vertical {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.bg-green {
+    background-color: #1a535c;
+}
+
+.bottom-0 {
+    bottom: 0;
+}
+
+.padding-top {
+    padding-top: 50px;
+}
+
+[class^="flaticon-account"]:before, [class*=" flaticon-account"]:before, [class^="flaticon-account"]:after, [class*=" flaticon-account"]:after {
+    font-size: 80px;
+}
+
+.btn-group-custom {
+    width: 50px;
+    margin-top: -78px;
+}
+
+.padding-vertical-long {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+}
+
+.right-rounded {
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.left-rounded {
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.rounded-lg {
+    border-radius: 1.5rem !important;
+}
+
+.background-image {
+    background-image: url("../cover-photo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.opacity-50 {
+    opacity: 0.5;
+}
+
+.opacity-100 {
+    opacity: 1 !important;
+}
+
+.modal-dialog {
+    margin: 8rem auto;
+}
+
+.min-width {
+    min-width: 30%;
+}
+.min-width-lg {
+    min-width: 50%;
+}
+
+.food-icon-lg {
+    width: 100px;
+    height: 100px;
+    border-radius: 0.3rem;
+}
+
+.border-bottom {
+    border-bottom: 1px dashed #dee2e6 !important;
+}
+
+.grey-color {
+    color: #424242;
+}
+table, th, td {
+    border: 1px solid #6c757d;
+}
+.first-row{
+    background-color: #d3d3d3;
+}
