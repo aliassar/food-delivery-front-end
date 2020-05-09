@@ -1,135 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa6a6d13-7c46-492d-918a-62095b2c1a5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/loghme-front.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/cover-photo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/star-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PrivateRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/flaticon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Flaticon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Flaticon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Flaticon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Flaticon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Flaticon.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir-Black.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir-Black.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir-Black.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir-Bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir-Light.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir-Light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir-Light.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir-Medium.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir-Thin.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir-Thin.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir-Thin.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/fonts/Vazir.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/SignUpPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    <list default="true" id="aa6a6d13-7c46-492d-918a-62095b2c1a5b" name="Default Changelist" comment="Add Header to requests and add login and signup and google login&#10;&#10;Move APIs inside DashboardPage.js&#10;Change Signup and login functionality&#10;Add Header to non-auth requests &#10;Remove initial state ( restaurants &amp; ... )&#10;Remove extra html files">
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/alias.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/alias.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cover-photo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/flaticon.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Flaticon.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Flaticon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Flaticon.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Flaticon.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Flaticon.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir-Black.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir-Black.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir-Black.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir-Bold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir-Light.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir-Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir-Medium.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir-Medium.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir-Medium.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir-Thin.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir-Thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir-Thin.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir-Thin.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/Vazir.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/normalize.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile-credit-with-modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile-credit-with-modal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile-credit.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile-credit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile-with-modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile-with-modal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant-with-modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-with-modal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sign-up.html" beforeDir="false" afterPath="$PROJECT_DIR$/sign-up.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/star-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile-credit-with-modal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile-credit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile-with-modal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant-with-modal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sign-up.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/DashboardPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DashboardPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LoginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ProfilePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SignUpPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SignUpPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,6 +60,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -207,11 +99,43 @@
       <workItem from="1586617865419" duration="2408000" />
       <workItem from="1586685086710" duration="1113000" />
       <workItem from="1586686211743" duration="27147000" />
+      <workItem from="1587734904826" duration="347000" />
+      <workItem from="1588237246372" duration="35000" />
+      <workItem from="1588237317412" duration="31000" />
+      <workItem from="1588237374158" duration="27000" />
+      <workItem from="1588237484394" duration="6086000" />
+      <workItem from="1588399171343" duration="521000" />
+      <workItem from="1588967060972" duration="1491000" />
+      <workItem from="1588990313742" duration="15481000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/toBeInRangeMatcher.d.js" />
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/waitForExpect.spec.d.js" />
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/index.d.js" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add Header to requests and add login and signup and google login&#10;&#10;Move APIs inside DashboardPage.js&#10;Change Signup and login functionality&#10;Add Header to non-auth requests &#10;Remove initial state ( restaurants &amp; ... )&#10;Remove extra html files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Header to requests and add login and signup and google login&#10;&#10;Move APIs inside DashboardPage.js&#10;Change Signup and login functionality&#10;Add Header to non-auth requests &#10;Remove initial state ( restaurants &amp; ... )&#10;Remove extra html files" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585907338699">
@@ -222,65 +146,89 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="529" y="203" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1585916551390" />
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1585920204306">
+    <state x="365" y="0" key="CommitChangelistDialog2" timestamp="1589010417135">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1585920204306" />
-    <state width="1515" height="190" key="GridCell.Tab.0.bottom" timestamp="1586686617148">
+    <state x="365" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589010417135" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1589010384423">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="190" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586686617148" />
-    <state width="1515" height="190" key="GridCell.Tab.0.center" timestamp="1586686617147">
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1589010384423" />
+    <state width="1515" height="239" key="GridCell.Tab.0.bottom" timestamp="1589000896596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="190" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586686617147" />
-    <state width="1515" height="190" key="GridCell.Tab.0.left" timestamp="1586686617147">
+    <state width="1515" height="239" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589000896596" />
+    <state width="1515" height="239" key="GridCell.Tab.0.center" timestamp="1589000896596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="190" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586686617147" />
-    <state width="1515" height="190" key="GridCell.Tab.0.right" timestamp="1586686617147">
+    <state width="1515" height="239" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589000896596" />
+    <state width="1515" height="239" key="GridCell.Tab.0.left" timestamp="1589000896596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="190" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586686617147" />
-    <state width="1515" height="239" key="GridCell.Tab.1.bottom" timestamp="1584438621603">
+    <state width="1515" height="239" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589000896596" />
+    <state width="1515" height="239" key="GridCell.Tab.0.right" timestamp="1589000896596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="239" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584438621603" />
-    <state width="1515" height="239" key="GridCell.Tab.1.center" timestamp="1584438621603">
+    <state width="1515" height="239" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589000896596" />
+    <state width="1515" height="239" key="GridCell.Tab.1.bottom" timestamp="1589000896596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="239" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1584438621603" />
-    <state width="1515" height="239" key="GridCell.Tab.1.left" timestamp="1584438621603">
+    <state width="1515" height="239" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589000896596" />
+    <state width="1515" height="239" key="GridCell.Tab.1.center" timestamp="1589000896596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="239" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1584438621603" />
-    <state width="1515" height="239" key="GridCell.Tab.1.right" timestamp="1584438621603">
+    <state width="1515" height="239" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1589000896596" />
+    <state width="1515" height="239" key="GridCell.Tab.1.left" timestamp="1589000896596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="239" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1584438621603" />
-    <state width="1515" height="239" key="GridCell.Tab.2.bottom" timestamp="1584438621603">
+    <state width="1515" height="239" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1589000896596" />
+    <state width="1515" height="239" key="GridCell.Tab.1.right" timestamp="1589000896596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="239" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584438621603" />
-    <state width="1515" height="239" key="GridCell.Tab.2.center" timestamp="1584438621603">
+    <state width="1515" height="239" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1589000896596" />
+    <state width="1515" height="239" key="GridCell.Tab.2.bottom" timestamp="1589000896597">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="239" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1584438621603" />
-    <state width="1515" height="239" key="GridCell.Tab.2.left" timestamp="1584438621603">
+    <state width="1515" height="239" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589000896597" />
+    <state width="1515" height="239" key="GridCell.Tab.2.center" timestamp="1589000896597">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="239" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1584438621603" />
-    <state width="1515" height="239" key="GridCell.Tab.2.right" timestamp="1584438621603">
+    <state width="1515" height="239" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1589000896597" />
+    <state width="1515" height="239" key="GridCell.Tab.2.left" timestamp="1589000896596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="239" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1584438621603" />
+    <state width="1515" height="239" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1589000896596" />
+    <state width="1515" height="239" key="GridCell.Tab.2.right" timestamp="1589000896597">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="239" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1589000896597" />
+    <state width="1515" height="239" key="GridCell.Tab.3.bottom" timestamp="1589000896597">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="239" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589000896597" />
+    <state width="1515" height="239" key="GridCell.Tab.3.center" timestamp="1589000896597">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="239" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1589000896597" />
+    <state width="1515" height="239" key="GridCell.Tab.3.left" timestamp="1589000896597">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="239" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1589000896597" />
+    <state width="1515" height="239" key="GridCell.Tab.3.right" timestamp="1589000896597">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="239" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1589000896597" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1586715211290">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1586715211290" />
-    <state x="452" y="128" width="631" height="568" key="find.popup" timestamp="1586714152188">
+    <state x="452" y="128" width="631" height="568" key="find.popup" timestamp="1589009747452">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="452" y="128" width="631" height="568" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1586714152188" />
+    <state x="452" y="128" width="631" height="568" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1589009747452" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1589007728228">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1589007728228" />
   </component>
 </project>

@@ -39,6 +39,7 @@ class Layout extends Component {
 						{location.pathname !== '/profile' && <a className="margin-left" href="/profile">حساب کاربری</a>}
 						<button onClick={() => {
 							localStorage.removeItem('isAuthenticated');
+							localStorage.removeItem('token');
 							history.push('/')
 						}} className="btn red-color">خروج
 						</button>

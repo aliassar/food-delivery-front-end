@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {withRouter} from "react-router-dom";
 import PropTypes from "prop-types";
+import {googleLogin, login} from "../api";
+import {GoogleLogin} from 'react-google-login';
 
 class LoginPage extends Component {
 	constructor(props) {
@@ -46,16 +48,45 @@ class LoginPage extends Component {
 									<div className="bg-white d-flex justify-content-center p-0 margin-top">
 										<button type="button" className="btn btn-info p-1 bg-cyan rounded w-100 border "
 										        onClick={() => {
-											        localStorage.setItem('isAuthenticated', 'true')
-											        this.props.history.push("/")
+											        login(this.state, (status, token) => {
+												        if (status === 200) {
+													        localStorage.setItem('isAuthenticated', 'true');
+													        localStorage.setItem('token', token)
+												        }
+											        });
+											        setTimeout(() => {
+												        this.props.history.push("/");
+											        }, 2000)
 										        }}>ورود
 										</button>
-										<button type="button" className="btn btn-outline-info p-1 bg-cyan rounded w-100 border margin-right"
+										<button type="button"
+										        className="btn btn-outline-info p-1 bg-cyan rounded w-100 border margin-right"
 										        onClick={() => {
-											        localStorage.setItem('isAuthenticated', 'true')
 											        this.props.history.push("/signup")
 										        }}>ثبت نام
 										</button>
+
+									</div>
+									<div className="align-items-center justify-content-center d-flex m-2"
+									     data-onsuccess={"onSignIn"}>
+										<GoogleLogin
+											clientId="347630814057-37803da2d84beq46tu5kifr4cc3cpplc.apps.googleusercontent.com"
+											buttonText="Login"
+											onSuccess={(response => googleLogin(
+												{token:response.tokenId},(status,token)=>{
+
+													if (status === 200) {
+														localStorage.setItem('isAuthenticated', 'true');
+														localStorage.setItem('token', token)
+													}
+													setTimeout(() => {
+														this.props.history.push("/");
+													}, 2000)
+												}
+											))}
+											onFailure={(response => console.log(response))}
+											cookiePolicy={'single_host_origin'}
+										/>
 									</div>
 								</div>
 							</div>
@@ -66,12 +97,13 @@ class LoginPage extends Component {
 		)
 	}
 }
-LoginPage.defaultProps={
-	history:{}
-};
-LoginPage.propTypes={
 
-	history:PropTypes.object.isRequired
+LoginPage.defaultProps = {
+	history: {}
+};
+LoginPage.propTypes = {
+
+	history: PropTypes.object.isRequired
 };
 
 export default withRouter(LoginPage)

@@ -1,10 +1,38 @@
 import axios from 'axios';
 
+
 const API = axios.create({
-	baseURL: `http://localhost:3002`
+	baseURL: `http://localhost:8080/Loghme_war_exploded/`,
 });
+export const login = (data, cb) => {
+	API.post(`login/`, data)
+		.catch(err => console.log(err))
+		.then(res => {
+			cb && res && cb(res.status, res.data);
+			return res && res.data
+		})
+};
+export const signUp = (data, cb) => {
+	API.put(`register/`, data)
+		.catch(err => console.log(err))
+		.then(res => {
+			cb && res && cb(res.status, res.data);
+			return res && res.data
+		})
+};
+export const googleLogin = (data, cb) => {
+	console.log(data)
+	API.post(`googleAuth/`, data)
+		.catch(err => console.log(err))
+		.then(res => {
+			cb && res && cb(res.status, res.data);
+			return res && res.data
+		})
+};
 export const getRestaurants = (cb) => {
-	API.get(`restaurants/`)
+	API.get(`restaurants/`, {
+		headers: {'token': localStorage.getItem('token').toString()}
+	})
 		.catch(err => console.log(err))
 		.then(res => {
 			cb && cb(res && res.data);
@@ -12,47 +40,59 @@ export const getRestaurants = (cb) => {
 		})
 };
 export const getFoodParty = (cb) => {
-	API.get(`foodParty/`)
+	API.get(`foodparty/`, {
+		headers: {'token': localStorage.getItem('token').toString()}
+	})
 		.catch(err => console.log(err))
 		.then(res => {
 			cb && cb(res && res.data);
 			return res && res.data
 		})
 };
-export const setCart = (cart,cb) => {
-	API.post(`cart/`,cart)
+export const setCart = (cart, cb) => {
+	API.post(`cart/`, cart, {
+		headers: {'token': localStorage.getItem('token').toString()}
+	})
 		.catch(err => console.log(err))
 		.then(res => {
 			cb && cb(res && res.data);
-			return {success:true}
+			return {success: true}
 		})
 };
-export const finalize = (cart,cb) => {
-	API.put(`cart/finalize/`,cart)
+export const finalize = (cart, cb) => {
+	API.put(`cart/finalize/`, cart, {
+		headers: {'token': localStorage.getItem('token').toString()}
+	})
 		.catch(err => console.log(err))
 		.then(res => {
 			cb && cb(res && res.data);
-			return {success:true}
+			return {success: true}
 		})
 };
 export const getOrders = (cb) => {
-	API.get(`orders/`)
+	API.get(`orders/`, {
+		headers: {'token': localStorage.getItem('token').toString()}
+	})
 		.catch(err => console.log(err))
 		.then(res => {
 			cb && cb(res && res.data);
 			return res && res.data
 		})
 };
-export const increaseCredit = (credit,cb) => {
-	API.post(`cart/`,credit)
+export const increaseCredit = (credit, cb) => {
+	API.post(`cart/`, credit, {
+		headers: {'token': localStorage.getItem('token').toString()}
+	})
 		.catch(err => console.log(err))
 		.then(res => {
 			cb && cb(res && res.data);
-			return {success:true}
+			return {success: true}
 		})
 };
-export const getCredit = (cb) => {
-	API.get(`profile/`)
+export const getUser = (cb) => {
+	API.get(`user/`, {
+		headers: {'token': localStorage.getItem('token').toString()}
+	})
 		.catch(err => console.log(err))
 		.then(res => {
 			cb && cb(res && res.data);
@@ -60,18 +100,22 @@ export const getCredit = (cb) => {
 		})
 };
 export const getCart = (cb) => {
-	API.get(`cart/`)
+	API.get(`cart/`, {
+		headers: {'token': localStorage.getItem('token').toString()}
+	})
 		.catch(err => console.log(err))
 		.then(res => {
 			cb && cb(res && res.data);
 			return res && res.data
 		})
 };
-export const setFoodPartyCart = (cart,cb) => {
-	API.post(`cart/foodParty`,cart)
+export const setFoodPartyCart = (cart, cb) => {
+	API.post(`cart/foodparty`, cart, {
+		headers: {'token': localStorage.getItem('token').toString()}
+	})
 		.catch(err => console.log(err))
 		.then(res => {
 			cb && cb(res && res.data);
-			return {success:true}
+			return {success: true}
 		})
 };

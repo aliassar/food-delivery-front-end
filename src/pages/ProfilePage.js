@@ -10,12 +10,16 @@ class ProfilePage extends Component {
 			isModalVisible: false,
 		}
 	}
+	componentDidMount() {
+		this.props.getUser()
+	}
 
 	selectedOrder = {};
 
 	render() {
 		const {isShowingOrders, isModalVisible} = this.state;
-		const {userOrders, setCredit, credit, isLoadingCredit} = this.props;
+		const {userOrders, setCredit, credit, isLoadingCredit, user} = this.props;
+		console.log(user)
 		return (
 			<main className="gap-bottom h-100">
 				<div className="red height-30 padding-top white-color">
@@ -23,21 +27,21 @@ class ProfilePage extends Component {
 						<div className="row  h-100">
 							<div className="col-8 d-flex align-items-center">
 								<i className="flaticon-account profile-icon"/>
-								<h3>احسان خامس پناه</h3>
+								<h3>{(user && user.fname) +' '+ (user && user.lname)}</h3>
 							</div>
 							<div className="col-4 d-flex flex-column justify-content-center">
 								<div className="d-flex align-items-center">
 									<i className="flaticon-phone">
 									</i>
 									<div>
-										09123456789
+										{user && user.phoneNumber}
 									</div>
 								</div>
 								<div className="d-flex align-items-center">
 									<i className="flaticon-mail">
 									</i>
 									<div>
-										ekhamespanah@yahoo.com
+										{user && user.email}
 									</div>
 								</div>
 								<div className="d-flex align-items-center">

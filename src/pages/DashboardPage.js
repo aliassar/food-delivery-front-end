@@ -19,6 +19,9 @@ class DashboardPage extends Component {
 		this.timer = setInterval(() => this.setState({
 			time: this.state.start - Date.now()
 		}), 1);
+		this.props.getRestaurant();
+		this.props.getUser();
+		this.props.getFoodParty()
 	}
 
 	componentDidUpdate(prevProps, prevState, snapshot) {
@@ -39,6 +42,11 @@ class DashboardPage extends Component {
 
 	render() {
 		const {foodParty, restaurants, history, currentOrder, setCurrentOrder} = this.props;
+		let foods = [];
+		foodParty.forEach((restaurant) => foods = [...foods, ...restaurant.menu.map(food => ({
+			...food,
+			restaurantName: restaurant.name
+		}))]);
 		const minuets = Math.floor(Math.floor(this.state.time / 1000) / 60);
 		const second = Math.floor(this.state.time / 1000) % 60;
 		return (
@@ -71,7 +79,7 @@ class DashboardPage extends Component {
 					زمان باقیمانده:{' ' + minuets + ':' + second}
 				</div>
 				<div className="margin-top d-flex flex-row horizontal-scroll w-100">
-					{foodParty && foodParty.map((food, index) =>
+					{foods && foods.map((food, index) =>
 						<div
 							key={index}
 							className="card bg-white food p-2 d-flex flex-column justify-content-around align-items-center m-3 min-width-200">

@@ -1,19 +1,21 @@
 import React, {Component} from 'react';
 import {withRouter} from "react-router-dom";
 import PropTypes from "prop-types";
+import {signUp} from "../api";
 
 class SignUpPage extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			name: '',
+			fname: '',
+			lname: '',
 			email: '',
 			password: ''
 		}
 	}
 
 	render() {
-		const {name, email, password} = this.state;
+		const {fname,lname, email, password} = this.state;
 		return (
 			<div className=" min-vh-100 w-100 background-image">
 				<main className="gap-bottom h-100 ">
@@ -34,9 +36,14 @@ class SignUpPage extends Component {
 							<div className=" d-flex justify-content-center">
 								<div className="justify-content-between m-5">
 									<label className="w-100" htmlFor="credit">
-										<input className="w-100  p-2 padding-vertical rounded border" type="text" id="name"
-										       name="name" placeholder="نام و نام خانوادگی" value={name}
-										       onChange={(event) => this.setState({name: event.target.value})}/>
+										<input className="w-100  p-2 padding-vertical rounded border" type="text" id="fname"
+										       name="name" placeholder="نام" value={fname}
+										       onChange={(event) => this.setState({fname: event.target.value})}/>
+									</label>
+									<label className="w-100" htmlFor="credit">
+										<input className="w-100  p-2 padding-vertical rounded border" type="text" id="lname"
+										       name="name" placeholder="نام خانوادگی" value={lname}
+										       onChange={(event) => this.setState({lname: event.target.value})}/>
 									</label>
 									<label className="w-100" htmlFor="credit">
 										<input className="w-100  p-2 padding-vertical rounded border" type="text" id="email"
@@ -51,11 +58,21 @@ class SignUpPage extends Component {
 									</label>
 									<div className="bg-white d-flex justify-content-center p-0 margin-top">
 										<button type="button" className="btn btn-info p-1 bg-cyan rounded w-100 border"
-										        onClick={() => this.props.history.push("/")}>ثبت نام
+										        onClick={() =>
+											        {
+												        signUp(this.state, (status, token) => {
+													        if (status === 200) {
+														        localStorage.setItem('isAuthenticated', 'true');
+														        localStorage.setItem('token', token);
+													        }
+												        });
+												        setTimeout(()=>{
+													        this.props.history.push("/");
+												        },2000)
+											        }}>ثبت نام
 										</button>
 										<button type="button" className="btn btn-outline-info p-1 bg-cyan rounded w-100 border margin-right"
 										        onClick={() => {
-											        localStorage.setItem('isAuthenticated', 'true');
 											        this.props.history.push("/login")
 										        }}>ورود
 										</button>
